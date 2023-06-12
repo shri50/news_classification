@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "2a2bb6ad-29b1-4747-be4f-b9d08fb658a1",
+		"name": "news_classification_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prediction_news_v2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "news",
+							"value": "Reports of breach of data from CoWin without any basis: Health ministry\nThe Union health ministry on Monday rejected several media reports about a massive data breach in the CoWin platform, even as it requested the country's nodal cyber security agency CERT-In to look into the issue and submit a report.\n",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/news",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prediction_news_v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/news",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"news"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
