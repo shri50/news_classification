@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from load_objects import model
+from load_objects import model,vectorizer
 from utils import clean_text
 import numpy as np 
 # from keras.utils import pad_sequences
