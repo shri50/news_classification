@@ -1,8 +1,8 @@
 import pickle
-import tensorflow as tf
+# import tensorflow as tf
 import CONFIG
 
-model_rnn =tf.keras.models.load_model(r"saved_model/simpleRNN")
+# model_rnn =tf.keras.models.load_model(r"saved_model/simpleRNN")
 
 with open(CONFIG.ML_MODEL_PATH,"rb") as file:
     model = pickle.load(file) 
