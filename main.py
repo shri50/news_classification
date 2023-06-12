@@ -22,12 +22,13 @@ def predict_ml():
     result = model.predict(news_vector)[0]
     print(f"Prediction from Model = {result}")
   
-    clean_news = clean_text(input_news["news"])
-    text_seq = tokenizer.texts_to_sequences(clean_news)
-    text_padpad_sequences= pad_sequences(text_seq, maxlen=130)
-    result_predict = model_rnn.predict(text_padpad_sequences)
-    prediction = encoder.inverse_transform([np.argmax(result_predict[0])])[0]
-    print(f"Prediction from DL = {prediction}")
+    # clean_news = clean_text(input_news["news"])
+    # text_seq = tokenizer.texts_to_sequences(clean_news)
+    # text_padpad_sequences= pad_sequences(text_seq, maxlen=130)
+    # result_predict = model_rnn.predict(text_padpad_sequences)
+    # prediction = encoder.inverse_transform([np.argmax(result_predict[0])])[0]
+    # print(f"Prediction from DL = {prediction}")
+    prediction = "GPU NOT AVIALABLE"
 
     return render_template("index.html", ML_RESULT = result, DL_RESULT=prediction )
 
