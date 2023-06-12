@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from load_objects import model
 from utils import clean_text
 import numpy as np 
-from keras.utils import pad_sequences
+# from keras.utils import pad_sequences
 import CONFIG
 
 
