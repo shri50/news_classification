@@ -4,7 +4,7 @@ import CONFIG
 
 # model_rnn =tf.keras.models.load_model(r"saved_model/simpleRNN")
 
-with open(CONFIG.ML_MODEL_PATH,"rb") as file:
+with open(r"artifacts/ml_model.pkl","rb") as file:
     model = pickle.load(file) 
     
 with open(CONFIG.VECTORIZER,"rb") as file: 
