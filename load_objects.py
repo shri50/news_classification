@@ -7,14 +7,14 @@ import CONFIG
 with open(r"artifacts/ml_model.pkl","rb") as file:
     model = pickle.load(file) 
     
-with open(CONFIG.VECTORIZER,"rb") as file: 
-    vectorizer = pickle.load(file)
+# with open(CONFIG.VECTORIZER,"rb") as file: 
+#     vectorizer = pickle.load(file)
     
-with open(CONFIG.TOKENIZER, "rb") as file: 
-    tokenizer =  pickle.load(file)
+# with open(CONFIG.TOKENIZER, "rb") as file: 
+#     tokenizer =  pickle.load(file)
     
-with open(CONFIG.ENCODER,"rb") as file:
-    encoder = pickle.load(file)
+# with open(CONFIG.ENCODER,"rb") as file:
+#     encoder = pickle.load(file)
 
 
 
